@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ol,
+ul,
+menu{
+    list-style: none;
+}
+
+a{
+    color: currentColor;
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+}
+
+.debug{
+ border: 3px dotted orange;
+}
+
+.main-interface{
+    height: calc(100vh - 100px);
+    display: flex;
+}
+
+.player{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.debug2{
+    border: 3px dotted purple;
+}
+
+.sidebar{
+    width: 200px;
+}
+
+.interface-display{
+    width: calc(100% - 200px);
+}
+
+.debug3{
+    border: 3px dotted green;
+}
+
+.interface-header{
+    height: 75px;
+}
+
+.interface-interaction{
+    height: calc(100% - 75px);
+}
+
+.player-interaction{
+    height: 75px;
+    width: 200px;
+}
