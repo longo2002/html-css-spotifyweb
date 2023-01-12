@@ -15,6 +15,14 @@ a{
     text-decoration: none;
 }
 
+:root {
+    --black: rgba(0,0,0,255);
+    --lightblack: rgba(40,40,40,255);
+    --intermediateblack: rgba(20,25,34,255);
+    --shadedblack: rgba(8,11,18,255);
+}
+
+
 body{
     height: 100vh;
 }
@@ -33,6 +41,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: var(--lightblack);
 }
 
 .debug2{
@@ -41,10 +50,12 @@ body{
 
 .sidebar{
     width: 200px;
+    background-color: var(--black);
 }
 
 .interface-display{
     width: calc(100% - 200px);
+    background-color: var(--intermediateblack);
 }
 
 .debug3{
@@ -53,6 +64,7 @@ body{
 
 .interface-header{
     height: 75px;
+    background-color: var(--shadedblack);
 }
 
 .interface-interaction{
