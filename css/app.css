@@ -40,18 +40,18 @@ body{
     border: 3px dotted orange;
    }
    
-   .debug2{
+.debug2{
        border: 3px dotted purple;
    }
    
-   .debug3{
+.debug3{
        border: 3px dotted green;
    }
 
 /* //player rules// */
 
 .player{
-    width: 100%;
+    flex-basis: 100%;
     height: 90px;
     display: flex;
     justify-content: space-between;
@@ -68,6 +68,46 @@ body{
     align-items: center;
     gap: 15px;
 }
+
+.player-interaction > i {
+    width: 15px;
+}
+
+.progresbar{
+    flex-direction: column;
+}
+
+.player-button ul{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.player-timebar{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.player-timebar p{
+    font-weight: bold;
+    font-size: small;
+}
+
+.timebar{
+    background-color: grey;
+    border-radius: 5px;
+    height: 6px;
+    width: 500px;
+}
+
+.volumebar{
+    background-color: grey;
+    border-radius: 5px;
+    height: 6px;
+    width: 100px;
+}
+
 
 .player-interaction-details{
     height: 100%; 
@@ -94,9 +134,8 @@ body{
 /* //player mediaquery// */
 
 @media only screen and (max-width: 480px){
-    .player{
-        
-    }
+    
+    
 }
 
 
