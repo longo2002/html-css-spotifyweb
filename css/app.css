@@ -59,10 +59,11 @@ body{
     background-color: var(--lightblack);
     color: white;
     font-family: sans-serif;
+    padding: 15px;
 }
 
 .player-interaction{
-    height: 75px;
+    height: 60px;
     display: flex;
     align-items: center;
     gap: 15px;
@@ -87,9 +88,10 @@ body{
     font-weight: lighter;
     font-size: smaller;
     color: grey;
-} */
+}
 
-/* //player mediaquery//
+
+/* //player mediaquery// */
 
 @media only screen and (max-width: 480px){
     .player{
