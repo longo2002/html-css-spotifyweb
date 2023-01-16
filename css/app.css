@@ -114,6 +114,9 @@ body{
     width: 100px;
 }
 
+.volume_details{
+    justify-content: flex-end;
+}
 
 .player-interaction-details{
     height: 100%; 
