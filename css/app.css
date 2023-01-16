@@ -51,7 +51,7 @@ body{
 /* //player rules// */
 
 .player{
-    flex-basis: 100%;
+    width: 100%;
     height: 90px;
     display: flex;
     justify-content: space-between;
@@ -67,14 +67,12 @@ body{
     display: flex;
     align-items: center;
     gap: 15px;
-}
-
-.player-interaction > i {
-    width: 15px;
+    width: 30%;
 }
 
 .progresbar{
     flex-direction: column;
+    width: 100%;
 }
 
 .player-button ul{
@@ -87,6 +85,7 @@ body{
     display: flex;
     align-items: center;
     gap: 25px;
+    width: 60%;
 }
 
 .player-timebar p{
@@ -94,11 +93,18 @@ body{
     font-size: small;
 }
 
+.player_song_action{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30%;
+}
+
 .timebar{
     background-color: grey;
     border-radius: 5px;
     height: 6px;
-    width: 500px;
+    width: 100%;
 }
 
 .volumebar{
@@ -133,22 +139,43 @@ body{
 
 /* //player mediaquery// */
 
-@media only screen and (max-width: 480px){
-    
-    
+@media only screen and (max-width: 575px){
+ 
 }
 
 
 /* //sidebar rules// */
 
-.sidebar{
+.sidebar {
+	display: flex;
+	flex-direction: column;
     width: 200px;
     background-color: var(--black);
 }
+.sidebar__widget {
+	padding: 20px;
+	border: 2px solid orange;
+}
+.sidebar > img{
+    height: 50px;
+}
 
+.sidebar__widget.app-install {
+	margin-top: auto;
+}
 /* //sidebar mediaquery// */
 
-@media only screen and (max-width: 480px) {
+@media (max-width: 575px) {
+	.sidebar {
+		flex-basis: 50px;
+	}
+
+	.sidebar__widget.playlist {
+		display: none;
+	}
+
+
+}@media only screen and (max-width: 575px) {
     .sidebar{
         width: 80px;
     }
@@ -176,10 +203,10 @@ body{
 }
 
 /* //main interface mediaquery// */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 575px) {
 
     .interface-display{
-        width: calc(100% - 80px);
+        width: calc(100% - 50px);
     }
     
 }
