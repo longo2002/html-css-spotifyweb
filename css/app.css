@@ -270,7 +270,7 @@ body{
     width: 25px;
 }
 
-.app-install span::after{
+.app-install a::after{
     display: block;
     content: '';
     width: 180px;
@@ -403,6 +403,33 @@ body{
     transform: scale(1.2);
 }
 
+.genre-selector{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 750;
+    opacity: 0.5;
+    padding: 15px 0;
+    flex-flow: row wrap;
+}
+
+.selected-genre{
+    margin-bottom: -5px;
+}
+
+.selected-genre::after{
+    content: '';
+	display: block;
+	height: 5px;
+    width: 50px;
+	background-color: limegreen;
+	position: relative;
+	top: 5px;
+    left: 20px;
+}
 
 .interface-interaction{
     height: calc(100% - 75px);
