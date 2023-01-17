@@ -32,6 +32,8 @@ img{
 
 body{
     max-height: 100vh;
+    color: white;
+    font-family: sans-serif;
 }
 
 /* //utility rules// */
@@ -155,17 +157,55 @@ body{
     width: 200px;
     background-color: var(--black);
 }
+
 .sidebar__widget {
-	padding: 20px;
-	border: 2px solid orange;
+	padding: 0 10px;
+	/* border: 2px solid orange; */
 }
-.sidebar > img{
+
+.sidebar__widget > img{
     height: 50px;
+}
+
+.logo-wrapper{
+    text-align: left;
+    padding: 15px;
 }
 
 .sidebar__widget.app-install {
 	margin-top: auto;
 }
+
+.main-menu{
+    margin-top: 25px;
+}
+
+.main-menu ul li{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    align-items: center;
+}
+
+.main-menu img{
+    width: 25px;
+}
+
+.playlist ul li{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.playlist i{
+    border: 2px solid grey;
+    font-size: 40px;
+    color: var(--black);
+    background-color: grey;
+}
+
 /* //sidebar mediaquery// */
 
 @media (max-width: 575px) {
