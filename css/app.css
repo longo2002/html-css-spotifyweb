@@ -85,7 +85,12 @@ body{
     width: 30%;
     display: flex;
     flex-wrap: wrap;
-    gap: 5%;
+    gap: 10%;
+    opacity: 0.5;
+}
+
+.player_song_action:hover{
+    opacity: 1;
 }
 
 .timebar{
@@ -311,11 +316,11 @@ body{
 		display: none;
 	}
 
-    .app-install span::after{
+    .app-install a::after{
         display: none;
     }
 
-    .app-install span{
+    .app-install a{
         display: none;
     }
 
@@ -403,6 +408,19 @@ body{
     transform: scale(1.2);
 }
 
+.interface-interaction{
+    height: calc(100% - 75px);
+    overflow-y: scroll;
+}
+
+.interface-interaction img:hover{
+    filter: opacity(0.5);
+}
+
+.genre-widget{
+    margin-bottom: 25px;
+}
+
 .genre-selector{
     display: flex;
     justify-content: center;
@@ -431,8 +449,85 @@ body{
     left: 20px;
 }
 
-.interface-interaction{
-    height: calc(100% - 75px);
+.song-display,
+.mix-display,
+.artist-display{
+    padding: 0 25px;
+    margin-bottom: 150px;
+}
+
+.song-display-section,
+.mix-display-section,
+.artist-display-section{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px;
+}
+
+.song-display-header,
+.mix-display-header,
+.artist-display-header{
+    margin-bottom: 25px;
+}
+
+.mix-display-header p{
+    opacity: 0.5;
+    margin-top: 10px;
+}
+
+.artist-display-header p{
+    opacity: 0.5;
+    margin-top: 10px;
+}
+
+.song-card,
+.mix-card,
+.artist-card{
+    width: 200px;
+    height: 200px;
+}
+
+.icon-hover{
+    width: 200px;
+    height: 200px;
+    display: none;
+}
+
+.song-card:hover {
+    display: block;
+}
+
+.song-card img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.mix-card img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.artist-card img{
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 999px;
+}
+
+.card-description{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+}
+
+.card-description-title{
+    font-weight: 900;
+    font-size: 16px;
+    text-align: center;
+}
+
+.card-description-subtitle{
+    opacity: 0.7;
 }
 
 /* //main interface mediaquery// */
